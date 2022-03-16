@@ -24,12 +24,27 @@ body{
     display: grid;
     grid-template-areas: "aside main main main"
                          "aside main main main"
+                         "aside main main main"
+                         "aside main main main"
                          "footer footer footer footer";
+    gap: 1.5rem;
     height: 100vh;
     width: 100vw;
 }
 
 aside, main, footer{
+    border: 1px solid #fff;
+}
+
+.item-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-left{
+    width: 22.37rem;
+    height: auto;
     border: 1px solid #fff;
 }
 
