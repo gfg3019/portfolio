@@ -2,5 +2,32 @@
     --body-bg-color: #22212C;
     --text-color: #837E9F;
     --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
+    --bg-techs: #CB92B1;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body{
+    background-color: var(--body-bg-color);
+}
+
+.container{
+    display: flex;
+    gap: 1rem;
+}
+
+main, aside{
+    height: 70vh;
+}
+
+aside{
+    flex-basis: 25%;
+}
+main{
+    flex: 1;
 }
