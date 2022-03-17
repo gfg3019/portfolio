@@ -14,28 +14,21 @@
 
 body{
     background-color: var(--body-bg-color);
+    padding: 35px;
 }
 
 /*montando o template*/
-.item-left{ grid-area: aside;}
-.item-right{grid-area: main;}
-.item-bottom{grid-area: footer;}
 .container{
-    display: grid;
-    grid-template-areas: "aside main main main"
-                         "aside main main main"
-                         "aside main main main"
-                         "aside main main main"
-                         "footer footer footer footer";
+    display: flex;
+    flex-direction: row;
     gap: 1.5rem;
     height: 100vh;
-    width: 100vw;
 }
-
-aside, main, footer{
-    border: 1px solid #fff;
+/*===================================INCIO DO ASIDE*/
+aside{
+    float: left;
+    position: relative;
 }
-
 .item-left{
     display: flex;
     flex-direction: column;
@@ -45,7 +38,106 @@ aside, main, footer{
 .card-left{
     width: 22.37rem;
     height: auto;
-    border: 1px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    background-color: var(--bg-cards);
+    border-radius: 8px;
+    padding: 45px;
+    box-sizing: border-box;
+    font-size: 0.81em;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    border: 2px solid #00FF00;
+    margin-bottom: 30px;
+}
+.header h1{
+    font-size: 1.43em;
+    line-height: 2;
+}
+.about ul{
+    list-style: none;
+}
+.about li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.about a img{
+    margin: 15px 10px -7px 0px;
+    padding-top: 10px;
+}
+
+.tecs nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.tecs nav h3{
+    font-size: 1.43em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.tecs ul{
+    display: flex;
+    list-style: none;
+}
+.tecs li{
+    padding: 5px;
 }
 
 
+.academia h3{
+    text-align: center;
+    font-size: 1.43em;
+    margin-bottom: 15px;
+}
+.academia li p:nth-child(1),
+.academia li p:nth-child(4){
+    font-size: 0.95em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.academia li p:nth-child(2),
+.academia li p:nth-child(5){
+    font-size: 0.87em;
+    font-weight: bold;
+}
+.academia li p:nth-child(3),
+.academia li p:nth-child(6){
+    font-size: 0.90em;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+/*==========================================FIM DO ASIDE*/
+
+
+
+
+
+
+/*=================================FOOTER*/
+footer{
+    position: absolute;
+    top: 1304px;
+    width: 95vw;
+}
+
+footer p{
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-color);
+
+}
