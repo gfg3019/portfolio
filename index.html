@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Genisson Gomes</title>
 </head>
-<body>
+<body> 
     <div class="container">
         <aside class="item-left">
             <div class="card-left header">
-                <img class="image" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="foto do perfil">
-                <h1>Genisson Gomes</h1>
+                <img class="image" id="imageTitle"src="" alt="foto do perfil">
+                <h1 id="userName"></h1>
                 <p>Full Stack Developer</p>
             </div>
             <div class="card-left about">
@@ -103,25 +103,64 @@
             </div>
         </aside>
         <main class="item-right">
-            <section class="card-group">
-                <header>
-                    <h3>Meus Projetos</h3>
-                    <a href="#">veja todos</a>
-                </header>
+            <div class="title-section">
+                <h3>Meus Projetos</h3>
+                <a href="#">veja todos</a>
+            </div>
+            
+            <div class="card-group">
+                
                 <div class="card">
-    
+                    <div class="head">
+                        <img src="./assets/folder.svg" alt="pasta">
+                        <h5 id="title">my-onix</h5>
+                    </div>
+                    
+                    <div class="content">
+                        <p id="description">Consulte os códigos de erro que aparencem no painel do veículo Onix</p>
+                        <div class="mini-information">
+                            <div class="sub-content">
+                                <img id="img1" src="./assets/star.svg" alt="estrela"><p id="star">100</p>
+                                <img id="img2" src="./assets/git-branch.svg" alt="branch"><p id="branch">100</p> 
+                            </div>
+                            <div class="sub-content">
+                                <span id="icon-color"></span><p id="languenge">Javascript</p>
+                            </div>
+                        </div>
+                       
+                    </div>
                 </div>
-            </section>
-            <section class="post-group">
+                <div class="card">
+                    skdbksbdk
+                </div>
+            </div>
+            <section class="title-section">
                 <h3>Post Recents</h3>
-                <div class="post">
-    
-                </div>
             </section>
+            <div class="post">
+                <img class="image" id="imageTeste"src="" alt="foto do perfil">
+                <div class="content-post">
+                    <h4 id="post-title">Erro adb devices no Genymotion e Android Studio (React Native)</h4>
+                    <p id="date-post">2 anos atrás</p>
+                    <p id="description-pos">Erro adb devices no Genymotion e Android Studio (React Native)</p>
+                    <div id="tags-group">
+                        <div class="tags">
+                            #react-native
+                        </div>
+                        <div class="tags">
+                            #react-native
+                        </div>
+                        <div class="tags">
+                            #react-native
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <footer>
         <p>Feito com &#128153; por Genisson Gomes</p>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

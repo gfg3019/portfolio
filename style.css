@@ -2,7 +2,8 @@
     --body-bg-color: #22212C;
     --text-color: #837E9F;
     --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;   
+    --bg-photos1: #CB92B1;
+    --bg-photos2: #00FF00;  
 }
 
 *{
@@ -38,7 +39,7 @@ aside{
 .card-left{
     width: 22.37rem;
     height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--bg-cards);
     border-radius: 8px;
     padding: 45px;
@@ -58,7 +59,7 @@ aside{
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
-    border: 2px solid #00FF00;
+    border: 2px solid var(--bg-photos2);
     margin-bottom: 30px;
 }
 .header h1{
@@ -118,26 +119,138 @@ aside{
 .academia li p:nth-child(6){
     font-size: 0.90em;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 /*==========================================FIM DO ASIDE*/
+/*===========================================INICIO Da sectio (my projects)*/
+.item-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
+.title-section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 
+    height: 12vh;
+    box-sizing: border-box;
+    background-color: var(--bg-cards);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.title-section h3{
+    font-size: 1.43rem;
+    color: var(--text-color);
+}
 
+.title-section a{
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+}
 
+.card-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card{
+    background-color: var(--bg-cards);
+    width: 28.4375rem;
+    height: 11.625rem;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--text-color);
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    gap: 1.15rem;
+    margin-top: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.875em;
+    margin-top: 25px;
+}
+.mini-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-content{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+#icon-color{
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: yellow;
+    border-radius: 100%;
+    border: 2px solid var(--text-color);
+}
+/*==========================================FIM Da sectio (my projects)*/
+.post{
+    width: 100%;
+    height: 11.625rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--bg-cards);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    color: var(--text-color);
+}
+.post img{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 2rem;
+    border-radius: 100%;
+    border: 2px solid var(--bg-photos1);
+}
+
+#post-title{
+    font-size: 1.125em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#date-post{
+    font-size: 0.875em;
+    margin-bottom: 20px;
+}
+#tags-group{
+    margin-top: 10px;
+}
+.tags{
+    display: inline;
+    margin-right: 25px;
+    font-size: 0.875em
+    
+}
 
 /*=================================FOOTER*/
 footer{
     position: absolute;
-    top: 1304px;
+    top: 81.5rem;
     width: 95vw;
 }
 
 footer p{
     position: relative;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
     color: var(--text-color);
 
 }
